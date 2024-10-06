@@ -1,0 +1,144 @@
+.App {
+  position: relative;
+  background-color: #a0c5f9;
+  height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.main-content {
+  display: grid;
+  max-height: 100vh;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  overflow: auto;
+  padding: 100px;
+}
+
+.category {
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  text-align: left;
+  gap: 10%;
+  padding: 0px 0px 0px 5%;
+  transition: .3s;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.category svg {
+  width: 100px;
+  height: 100px;
+}
+
+.category h1 {
+  color: darkblue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main-content img {
+  position: absolute;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+}
+
+
+.category:hover {
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.title {
+  background-color: #76a3db;
+  padding: 20px;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form {
+  padding: 30px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.form .form-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.form .form-sec svg {
+  height: 70px;
+}
+
+.form .form-sec div {
+  display: grid;
+  width: 50%;
+  gap: 5px;
+}
+
+.form .form-sec div label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form .form-sec div input {
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+
+  font-weight: normal;
+}
+
+.form .submit {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.form .submit button {
+  height: 35px;
+  width: 120px;
+}
+
+.form .button {
+  background: none;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  transform: translateY(-3px);
+  height: 40px;
+  width: 40px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.form .button:hover {
+  background-color: rgb(239, 239, 239);
+}
+
+.form .button svg {
+  height: 20px;
+}

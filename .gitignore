@@ -1,0 +1,6 @@
+*/node_modules/*
+my-app/*
+*.zip
+listfile.txt
+temp/*
+nodejs/*

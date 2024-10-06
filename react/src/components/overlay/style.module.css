@@ -1,0 +1,36 @@
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.content {
+    /* overflow: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    border: 5px solid black;
+}
+
+
+.hide {
+    opacity: 0;
+    display: none;
+}
+
+.container {
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+}
