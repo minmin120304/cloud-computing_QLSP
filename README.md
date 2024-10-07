@@ -14,7 +14,7 @@ Sau khi tạo xong, ấn **View VPC**.
 ![alt text](./img/image-1.png)
 
 Kiểm tra xem **Resource map** có giống như trên hình ảnh không.
-Thế là tạo thành công **VPC** cho dự án.
+Vậy là tạo thành công **VPC** cho dự án.
 
 ### Tạo Security Group.
 Truy cập [trang Security Group](https://ap-southeast-1.console.aws.amazon.com/vpcconsole/home?region=ap-southeast-1#SecurityGroups:) để tạo **Security Group** cho dự án.
@@ -24,15 +24,15 @@ Chọn **Create security group**. Đặt tên **Security Group** và **Descripti
 ![alt text](./img/image-3.png)
 
 
-Phần **Inbound rules**, chọn **Add Rule**. Phần **Type** chọn *All trafic*, phần **Source** chọn *Anywhere-IPv4*. Làm thêm một cái nữa cho *Anywhere-IPv6*.
+Phần **Inbound rules**, chọn **Add Rule**. Phần **Type** chọn *All trafic*, phần **Source** chọn *Anywhere-IPv4*. Làm thêm 1 cái tương tự cho **Source** *Anywhere-IPv6*.
 ![alt text](./img/image-5.png)
 
-> Không nên để cấu hình **Inbound Rules** như trên vì sẽ cho phép tất cả lưu lương internet truy cập vào dịch vụ AWS.
+> Không nên để cấu hình **Inbound Rules** như trên vì sẽ cho phép tất cả lưu lượng internet truy cập vào dịch vụ AWS.
 
 Phần **Outbound rules**, làm tương tự như trên.
 ![alt text](./img/image-6.png)
 
-Kéo xuống dưới cuối trang, ấn **Create security group** để tạo **Security group**. Ẫn xong, ta sẽ có giao diện:
+Kéo xuống dưới cuối trang, ấn **Create security group** để tạo **Security group**. Sau đó ta sẽ có giao diện:
 ![alt text](./img/image-7.png)
 
 Xong bước 1 là tạo **VPC**.
@@ -107,7 +107,7 @@ Ta chọn **Free tier**.
 ![alt text](./img/image-26.png)
 
 #### Availability & durability
-Ta không cần để ý.
+Bỏ qua
 ![alt text](./img/image-29.png)
 
 #### Settings
@@ -129,7 +129,7 @@ Ta giữ nguyên cài đặt.
 
 #### Connectivity 
 * **Compute resource**: chọn **Connect to an EC2 compute resource**
-* **EC2 instance**: chọn **EC2** vừa tạo ban nãy.
+* **EC2 instance**: chọn **EC2** vừa tạo trước đó.
 * **VPC security group (firewall)**: chọn **security group** tạo ở phần **VPC**.
 * **Còn lại**: giữ nguyên.
 
@@ -203,7 +203,7 @@ Ta tạo một tệp mới tên là **nodejs** và sao chép tệp **node_module
 
 ![alt text](./img/image-50.png)
 
-Thế là hoàn thành bước đầu tiên.
+Vậy là hoàn thành bước đầu tiên.
 
 #### Tạo **layer**.
 Ta quay lại trang trên. Ta chọn **Create layer**.
@@ -313,7 +313,7 @@ Sau đó ta ấn **Invoke**.
 Nếu nó hiện thị kết quả sau thì là đã thành công:
 ![alt text](./img/image-74.png)
 
-## Bước 4: Tạo Amazon API Gateway
+## Bước 5: Tạo Amazon API Gateway
 ### Tạo Restful API
 #### Khởi tạo API
 Truy cập [trang API Gateway](https://ap-southeast-1.console.aws.amazon.com/apigateway/main/precreate?region=ap-southeast-1), chọn **Build** ở **REST API**.
